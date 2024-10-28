@@ -18,7 +18,7 @@
 
 1. Clona este repositorio del proyecto. 
 ```bash
-git clone 
+git clone <direccion_del_repositoio>
 ```
 2. Asegúrate de instalar requirements.txt
 
@@ -37,9 +37,10 @@ python DDL_VALIDATOR.py <ruta/al/archivo_ddl.sql> --output <formato_de_salida>
 
 El script generará un reporte con la siguiente información:
 
-        1. Errores: problemas críticos, como tablas sin clave primaria o claves foráneas que refieren a columnas inexistentes (en rojo).
-        2. Advertencias: problemas que podrían indicar deficiencias en el diseño, como columnas de claves no indexadas (en naranja).
-        3. Información: datos útiles sobre la estructura, como posibles relaciones uno a muchos o muchos a muchos (en azul).
+1. Errores: problemas críticos, como tablas sin clave primaria o claves foráneas que refieren a columnas inexistentes (en rojo).
+2. Advertencias: problemas que podrían indicar deficiencias en el diseño, como columnas de claves no indexadas (en naranja).
+3. Información: datos útiles sobre la estructura, como posibles relaciones uno a muchos o muchos a muchos (en azul).
+   
 El reporte HTML será guardado en el archivo ddl_analysis_report.html en el mismo directorio en el que se ejecuta el script, a menos que se especifique otro directorio.
 ## Contribuciones
 Las contribuciones son bienvenidas. Si deseas mejorar este script, por favor abre un issue o envía un pull request.
