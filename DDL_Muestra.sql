@@ -74,3 +74,37 @@ CREATE TABLE shipping_addresses (
     country VARCHAR(100) NOT NULL,
     PRIMARY KEY (address_id)
 );
+
+CREATE TABLE empleados (
+    id_empleado INT,
+    nombre VARCHAR(50),
+    puesto VARCHAR(50)
+);
+
+CREATE TABLE departamentos (
+    id_departamento INT PRIMARY KEY,
+    nombre VARCHAR(50)
+);
+
+CREATE TABLE proyectos (
+    id_proyecto INT PRIMARY KEY,
+    id_departamento INT,
+    FOREIGN KEY (id_departamento) REFERENCES departamentos(id_dep)
+);
+
+CREATE TABLE estudiantes (
+    id_estudiante INT PRIMARY KEY,
+    nombre VARCHAR(50)
+);
+
+CREATE TABLE cursos (
+    id_curso INT PRIMARY KEY,
+    titulo VARCHAR(50)
+);
+
+CREATE TABLE estudiantes_cursos (
+    id_estudiante INT,
+    id_curso INT,
+    FOREIGN KEY (id_estudiante) REFERENCES estudiantes(id_estudiante),
+    FOREIGN KEY (id_curso) REFERENCES cursos(id_curso)
+);
