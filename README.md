@@ -10,6 +10,15 @@
 - Reconoce posibles relaciones de uno a muchos y muchos a muchos.
 - Genera un reporte en formato de texto o HTML, con colores distintivos para errores, advertencias e información adicional.
 
+  
+## Repository Structure
+- DDL_VALIDADOR
+  Este script analiza un archivo de DDL (lenguaje de definición de datos) para extraer información de tablas, claves primarias, claves foráneas y otros detalles estructurales. Luego genera un informe, que puede ser en texto plano o HTML, identificando problemas o áreas a mejorar en la definición del esquema.
+- DDL_Muestra.sql
+  DDL proporcinado como prueba para el validador.
+- ddl_analysis_report.html
+  Reporte generado en html que con el archivo DDL proporcionado, el script destacaría los problemas y áreas de mejora en las tablas y relaciones definidas.
+
 ## Requisitos
 
 - Python 3.6 o superior
