@@ -18,7 +18,7 @@
 
 1. Clona este repositorio del proyecto. 
 ```bash
-git clone <direccion_del_repositoio>
+git clone https://github.com/Axitymx/24_AXITY_AR51_D_ANDROMEDA_SQL-BLUEPRINT-ANALYZER.git
 ```
 2. Asegúrate de instalar requirements.txt
 
