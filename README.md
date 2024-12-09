@@ -11,12 +11,12 @@
 - Genera un reporte en formato de texto o HTML, con colores distintivos para errores, advertencias e información adicional.
 
   
-## Repository Structure
-- DDL_VALIDADOR <br>
+## Estructura del repocitorio
+- [DDL_VALIDADOR.py](DDL_VALIDADOR) <br>
   Este script analiza un archivo de DDL (lenguaje de definición de datos) para extraer información de tablas, claves primarias, claves foráneas y otros detalles estructurales. Luego genera un informe, que puede ser en texto plano o HTML, identificando problemas o áreas a mejorar en la definición del esquema.
-- DDL_Muestra.sql <br>
+- [DDL_Muestra.sql](DDL_Muestra) <br>
   DDL proporcinado como prueba para el validador.
-- ddl_analysis_report.html <br>
+- [ddl_analysis_report.html](ddl_analysis_report) <br>
   Reporte generado en html que con el archivo DDL proporcionado, el script destacaría los problemas y áreas de mejora en las tablas y relaciones definidas.
 
 ## Requisitos
